@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name><images><image file='train'>
+<box top='268' left='15' width='787' height='479'/>
+</image>
+</images>
+</dataset>
