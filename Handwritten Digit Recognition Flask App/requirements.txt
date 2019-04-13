@@ -1,0 +1,7 @@
+Flask == 0.11.1
+keras
+numpy
+scipy
+h5py
+pillow
+tensorflow

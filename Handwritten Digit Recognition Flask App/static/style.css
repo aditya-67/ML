@@ -1,0 +1,79 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
+
+* { margin: 0; padding: 0; }
+
+html
+{
+	background-image: -webkit-radial-gradient(top center, circle cover, #E7E7E8 30%, #C6C6C6);
+	background-image: -moz-radial-gradient(top center, circle cover, #E7E7E8 30%, #C6C6C6);
+	background-image: -ms-radial-gradient(top center, circle cover, #E7E7E8 30%, #C6C6C6);
+	background-image: -o-radial-gradient(top center, circle cover, #E7E7E8 30%, #C6C6C6);
+	background-image: radial-gradient(top center, circle cover, #E7E7E8 30%, #C6C6C6);
+	height: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	overflow: hidden;
+  
+  
+}
+
+h1
+{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: 'Open Sans', Helvetica;
+	color: #807F7D;
+	font-size: 25px;
+	font-weight: 300;
+	z-index: -1;
+}
+
+h1 span { color: #4eb5e5; font-weight: 400; }
+
+/* Debug */
+
+#debug
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px;
+}
+.myButton {
+	 width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+  text-align: center;
+  text-indent: 0;
+
+/* Just for presentation */  
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.myButton:active {
+	box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+  top: 1px;
+}
+
+
