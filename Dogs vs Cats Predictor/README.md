@@ -14,6 +14,10 @@ To install dependencies,
 
 ```pip install -r requirements.txt```
 
+## Training and Saving the model
+
+Please refer to this [notebook](https://github.com/aditya-67/ML/blob/master/Dogs%20vs%20Cats%20Image%20Classification.ipynb)
+
 ## Usage
 
 Once dependencies are installed, just run this. 
