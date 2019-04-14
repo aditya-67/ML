@@ -1,8 +1,8 @@
 # Image Recognition (Dogs vs Cats)
 
-##Website (Deployed in Heroku)
+## Website (Deployed in Heroku)
 
-https://digit-recognition-cnn.herokuapp.com/
+ https://image-recognition-cnn.herokuapp.com/
 
 ## Overview
 
