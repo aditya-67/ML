@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Recognition using CNN (Dogs vs Cats)</title>
+  
+  
+  
+      <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+ 
+		
+
+<div class="agile-its">
+	<h2>Image Recognition using CNN (Dogs vs Cats)</h2>
+	<div class="layout">
+	<span style="color: #4eb5e5; font-weight: 400; font-family: 'Open Sans', Helvetica;	line-height: 1.7;">
+		This is six-layer CNN built using tflearn. Accuracy of the model(10 epochs) : 85.01% (can be trained better for accurate results!) 
+	</span>
+	<br>
+			<span style="color: #4eb5e5; font-weight: 400; font-family: 'Open Sans', Helvetica;	line-height: 1.7;">Please upload
+			the image you want to recognize (JPEG only). Make sure it's an image containing either dog or cat, not both.</span>
+		<div class="photos-upload-view">
+					<div class="agileinfo">
+					<input type='file' class="choose" onchange="readURL(this);" />
+					<p style="display: none" id="datastring"></p>
+					<img id="blah" src="http://placehold.it/200" alt="sample image" style="    right: 10%;
+    position: absolute;
+    top: 0;" />
+
+    <button class="myButton" id="predict"><span style=" font-weight: 400; font-family: 'Open Sans', Helvetica;"> Predict </span></button>	
+			<div id="messages">
+				<p id="result"><span> </span></p>
+			<p id="probabilities"><span> </span></p>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+
+		</div>
+</div>
+		
+  		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+	    <script src="{{ url_for('static',filename='index.js') }}"></script>
+	    <script type="text/javascript">
+	   
+	   		$("#predict").click(function(){
+	   			var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+	   			var img_data = document.getElementById("datastring").innerHTML;
+	   			$.ajax({
+	   				type: "POST",
+	   				url: $SCRIPT_ROOT + "/predict/",
+	   				data: img_data,
+	   				success: function(data){
+	   					$('#result').text(' Predicted Output: '+ data["result"]);
+	   					$('#probabilities').text(' Accuaracy of Prediction: '+data["probability"])
+	   				}
+	   			});
+	   		});
+	   
+	   </script>
+</body>
+</html>
