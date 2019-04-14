@@ -1,6 +1,6 @@
 # Handwritten Digit Recognition
 
-##Website (Deployed in Heroku)
+## Website (Deployed in Heroku)
 
 https://digit-recognition-cnn.herokuapp.com/
 
