@@ -26,7 +26,7 @@ Once dependencies are installed, just run this.
 
 Now, the application would be running on 
 
-```http://localhost:5000```
+```http://localhost:8080```
 
 It is serving a saved Keras model via Flask.
 
