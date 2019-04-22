@@ -2,7 +2,7 @@ Flask == 0.11.1
 gevent
 gunicorn
 tflearn
-opencv-python
+opencv-python-headless
 numpy
 h5py
 pillow
